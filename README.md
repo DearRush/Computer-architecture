@@ -1,12 +1,12 @@
 # README
 
-这是计算机体系结构中我完成的各个实验作业，包括了SIMD（指令并行），汇编代码，缓存与内存。
+This is the lab assignments I completed in the course Computer Architecture. In this project, it includes SIMD instructions (Instruction Parallelism), Assembly Code, Cache and Memory.
 
-在实验中，我通过实际代码的运行和计算机体系结构中相关知识的理论推导，分析理解了计算机系统结构工作机制。
+In the experiments, I analyzed and understood the mechanism of how computer system architecture works by running the actual code and theoretical derivation of the knowledge in computer architecture.
 
-这里展示的是几次我认为很有意义的实验，我在这几次实验中能够通过自己设计的代码运行的结果直观地感受到计算机工作的原理，这也是我认为最重要最有趣的一点。
+Shown here are a few experiments that I think are very meaningful, in which I was able to visualize the working principle of computer through the result of running the code designed by myself, which is also the most important and interesting point for me.
 
-每一个文件夹对应了相应的实验内容，在每个文件夹的PDF（或word）文件中，是我本次的实验作业报告。同时每个文件夹中也包含了本次实验的相关代码。
+Each folder corresponds to the corresponding experimental content, and in the PDF (or word) file in each folder is the report of my current lab assignment. Also each folder contains the relevant code for this experiment.
 
-每一个文件夹下面的图片是部分展示结果。（PDF文件中也包含了相关展示）
+The picture below each folder is part of the display results. (The PDF file also contains the relevant display)
 
