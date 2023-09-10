@@ -1,18 +1,18 @@
-#### 实验： SIMD 
+# Lab:SIMD 
 
-#### 指令目的： 了解并掌握 Intel SIMD 指令的基本用法
+## Main Purpose:
 
+To understand and master the basic usage of the Intel SIMD command.
 
+## Summarize
 
-#### 总结
+SIMD (Single Instruction Multiple Data) that is, Single Instruction Stream Multiple Data Stream, is a kind of controller to control multiple processors, at the same time on a set of data (also known as the "data vector") in each of the same operation to realize the spatial parallelism of the technology. The technology. This simply means that a single instruction can process more than one piece of data at the same time.
 
-SIMD(**Single Instruction Multiple Data**)即单指令流多数据流，是一种采用一个控制器来控制多个处理器，同时对一组数据（又称“数据向量”）中的每一个分别执行相同的操作从而实现空间上的并行性的技术。简单来说就是一个指令能够同时处理多个数据。
+The goal of this experiment is to improve program performance by implementing SIMD through the use of loop unrolling and specialized Intel SIMD intrinsics functions. In the assignment, this metric is measured by the statistics of the program's runtime.
 
-而这个实验的目的正是通过使用循环展开和专用的Intel SIMD intrinsics 函数等实现SIMD，进而实现程序性能的提升。在作业中，这一指标主要是通过程序运行时间的统计而进行测量的。
+In the programs sum.c and sum_256.c, I used the techniques of loop expansion, 128-bit dedicated computational functions, and 256-bit dedicated computational functions, respectively, and finally succeeded in making the program runtime significantly reduced.
 
-在程序sum.c,sum_256.c中我分别使用了循环展开，128位的专用计算函数，256位的专用计算函数等技巧，最终成功使得程序运行时间显著降低。
-
-sum.c程序输出为：
+The output of the sum.c program is:
 
 ```
 naive: 16.16 microseconds
@@ -21,16 +21,17 @@ vectorized: 12.32 microseconds
 vectorized unrolled: 11.92 microseconds
 ```
 
-sum_256.c程序输出是：
+The output of the sum256.c program is:
 
 ```
 naive: 16.30 microseconds
 unrolled: 15.10 microseconds
 vectorized: 11.92 microseconds
-vectorized unrolled: ERROR!(未编写函数)
+vectorized unrolled: ERROR!(Functions not written)
 ```
 
-
+From the appeal results, it can be found that the code using SIMD instruction runs significantly faster than the normal code.
+Therefore, I believe that by increasing the number of parallel bytes, the program is able to process more data at the same time, which is the reason for the phenomenon. Appropriate use of hardware parallelism in programming can better improve program performance.
 
 
 
